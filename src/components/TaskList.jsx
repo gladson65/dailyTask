@@ -44,7 +44,7 @@ function TaskList() {
                 }
 
                 <h1 className="text-white text-center
-                    md:text-3xl mt-2 py-7">
+                    sm:text-3xl mt-2 py-7">
                     {showToDoList ? "Your Tasks" : "Recently Added Tasks"}
                 </h1>
 
