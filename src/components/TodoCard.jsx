@@ -48,9 +48,9 @@ function TodoCard (props) {
                 ""
                 :
                 <>
-                    <div className="bg-green-300 h-44 rounded-xl">
+                    <div className="bg-slate-800 h-44 rounded-xl">
                         <div className="w-full flex justify-between items-center py-1 px-1">
-                            <h2 className="text-2xl">Task: {props.id+1}</h2>
+                            <h2 className="text-2xl text-green-400">Task: {props.id+1}</h2>
                             <div className="bg-slate-700 text-white w-32 flex justify-between px-2 rounded-xl">
                                 <span onClick={priorityLow} className={`hover:text-blue-400 cursor-pointer ${low ? 'text-green-400': ''}`}>
                                     Low
@@ -65,7 +65,7 @@ function TodoCard (props) {
                             <button className="hover:bg-black rounded-xl" onClick={deleteOne}>❌</button>
                         </div>
 
-                        <div className="pt-1 px-2 overflow-hidden">
+                        <div className="pt-1 px-2 overflow-hidden text-white">
                             <p>{props.task}</p>
                         </div>
                         

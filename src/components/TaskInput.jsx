@@ -46,7 +46,7 @@ function TaskInput() {
 
     return (
         <>
-            <div className="w-screen flex justify-center items-center py-4 h-28 gap-7 relative">
+            <div className="w-screen flex justify-center items-center py-4 h-28 gap-7 relative bg-white">
 
                 {
                     msg &&

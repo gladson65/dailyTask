@@ -40,7 +40,7 @@ function TaskList() {
 
                 {
                     msg &&
-                    <h1 className='w-screen text-2xl rounded-xl absolute bg-black text-green-600 py-2 text-center'>Task successfull deleted. Refresh the page!</h1>
+                    <h1 className='w-screen text-2xl rounded-xl absolute bg-white text-green-600 py-2 text-center'>Task successfull deleted. Refresh the page!</h1>
                 }
 
                 <h1 className="text-white text-center
@@ -49,8 +49,8 @@ function TaskList() {
                 </h1>
 
                 <div className="absolute top-5 left-5">
-                    <button onClick={toDoList} className="bg-teal-200 px-2 py-2 rounded-xl">
-                        {showToDoList ? "<--" : "To-Do"}
+                    <button onClick={toDoList} className="hover:bg-slate-500 transition-all duration-200 bg-teal-200 px-2 py-2 rounded-xl">
+                        {showToDoList ? "↩" : "To-Do"}
                     </button>
                 </div>
 
