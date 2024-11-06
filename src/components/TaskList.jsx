@@ -54,7 +54,7 @@ function TaskList() {
                     </button>
                 </div>
 
-                <div className="text-white absolute right-10 top-2">
+                <div className="text-white absolute right-10 top-2 hidden">
                     <span onClick={toggleView} className="cursor-pointer">
                         List {toggleList ? "☑️" : "☐"} 
                     </span>
