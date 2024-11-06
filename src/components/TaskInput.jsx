@@ -18,25 +18,26 @@ function TaskInput() {
         // storing task in redux store
         dispatch(addTask(inputText));
 
-        setMsg(true);
-        setTimeout(() => {
-            setMsg(false);
-        }, 2000)
         
         //storing task in localstorage
-        if (localStorage.getItem("tasks") === null) {
+        if (localStorage.getItem("tasks") === null && inputText != "") {
             localStorage.setItem('tasks', `${inputText}`)
             document.querySelector(".input").value = "";
             setInputText("");
-            
+            setMsg(true);
         }
-        else {
+        else if(inputText != "") {
             const storedTasks = [localStorage.getItem('tasks')];
             storedTasks.push(inputText);
             localStorage.setItem('tasks', `${storedTasks}`);
             document.querySelector(".input").value = ""
             setInputText("");
+            setMsg(true);
         }
+
+        setTimeout(() => {
+            setMsg(false);
+        }, 2000)
         
 
     }
