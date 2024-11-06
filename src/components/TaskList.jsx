@@ -11,6 +11,7 @@ function TaskList() {
     const [ todoData, setTodoData ] = useState([]);
     const [ toggleList, setToggleList ] = useState(false);
     const [ showToDoList, setShowToDoList ] = useState(false);
+    const [ msg, setMsg ] = useState(false);
     
 
     // subscribing to the store
@@ -36,6 +37,12 @@ function TaskList() {
     return (
         <>
             <div className="taskList bg-black w-screen h-auto pb-10 overflow-y-scroll scroll-smooth no-scrollbar relative">
+
+                {
+                    msg &&
+                    <h1 className='w-screen text-2xl rounded-xl absolute bg-black text-green-600 py-2 text-center'>Task successfull deleted. Refresh the page!</h1>
+                }
+
                 <h1 className="text-white text-center
                     text-3xl mt-2 py-7">
                     {showToDoList ? "Your Tasks" : "Recently Added Tasks"}
@@ -67,7 +74,7 @@ function TaskList() {
                                 todoData.length > 0 ?
                                 
                                 todoData.map((task, i) => {
-                                    return <TodoCard key={i} task={task} id={i}/> 
+                                    return <TodoCard key={i} task={task} id={i} setMsg={setMsg}/> 
                                 })
                                 :
                                 <>
