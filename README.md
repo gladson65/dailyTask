@@ -1,8 +1,35 @@
-# React + Vite
+# This is a To Do App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Build with:
 
-Currently, two official plugins are available:
+    - React.js
+    - Vite
+    - Redux
+    - Tailwind CSS
+    - HTML, CSS, JavaScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## instruction:
+
+    - At first install node modules inside "/todo" route.
+    - Then run a command 'npm run dev'.
+
+
+## operate the app:
+
+    - First Login to go to the home page.
+    - Then you can add task.
+    - First you get 'recently added task' view page.
+    - By selecting 'List' box you can view your tasks in a list format.
+    - This app stores task data and user information in localstorage. So it can persist the task data and user information.
+    - To view your parmanent tasks click on 'todo' button.
+    - You can set priority by clicking low, mid and high button.
+    - You can delete individual task by clicking on the cross symbol.
+    - This app tells you current time and weather information.
+
+
+- [@github](https://github.com/gladson65/dailyTask)
+- (https://github.com/gladson65/dailyTask) 
+
+
+
